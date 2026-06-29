@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones | Voxel</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+  <style>
+    :root {
+      --violet: #7c3dff;
+      --violet-strong: #9a5cff;
+      --ink: #111827;
+      --night: #080b16;
+      --void: #050611;
+      --panel: #0e1222;
+      --panel-strong: #141a2d;
+      --muted-dark: #a5afc3;
+      --soft: #f7f8fb;
+      --white: #ffffff;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, #050611 0%, #080b16 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .popup-container {
+      width: 100%;
+      max-width: 680px;
+      background: rgba(14, 18, 34, 0.95);
+      border: 1px solid rgba(151, 93, 255, 0.2);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(151, 93, 255, 0.15);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .btn-close {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 180ms ease;
+    }
+
+    .btn-close:hover {
+      background: var(--white);
+      color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+    .legal-content {
+      color: var(--muted-dark);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-height: 60vh;
+      overflow-y: auto;
+      padding-right: 12px;
+    }
+
+    /* Scrollbar personalizado */
+    .legal-content::-webkit-scrollbar {
+      width: 6px;
+    }
+    .legal-content::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 999px;
+    }
+    .legal-content::-webkit-scrollbar-thumb {
+      background: rgba(124, 61, 255, 0.3);
+      border-radius: 999px;
+    }
+    .legal-content::-webkit-scrollbar-thumb:hover {
+      background: var(--violet);
+    }
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      color: var(--white);
+    }
+
+    p { margin-top: 0; margin-bottom: 16px; }
+
+    .legal-card {
+      padding: 18px;
+      background: rgba(5, 6, 17, 0.6);
+      border: 1px solid rgba(151, 93, 255, 0.1);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+
+    .popup-footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h1>Términos y Condiciones</h1>
+      <button class="btn-close" onclick="window.close()">Cerrar ventana</button>
+    </div>
+
+    <div class="legal-content">
+      <p>Te damos la bienvenida a Voxel. Al navegar por nuestra web o solicitar una de nuestras maquetas adaptadas o desarrollos a medida, aceptas cumplir los siguientes términos de servicio.</p>
+
+      <h2>1. Propuesta de Servicios</h2>
+      <p>Voxel ofrece soluciones profesionales de diseño de interfaces, maquetación frontend estática y estructuración comercial de textos (copywriting) orientados a objetivos comerciales. Ofrecemos dos modalidades de trabajo:</p>
+      <div class="legal-card">
+        <p style="margin-bottom: 10px;"><strong>A) Adaptación de Plantillas Premium:</strong> Estructuras optimizadas pre-diseñadas por nosotros, ideales para un lanzamiento rápido ajustando paleta de colores, marcas, tipografías e imágenes del cliente.</p>
+        <p style="margin-bottom: 0;"><strong>B) Desarrollo Web Dedicado 1 a 1:</strong> Proyectos creados completamente desde cero a medida de las necesidades técnicas y funcionales específicas del negocio del cliente.</p>
+      </div>
+
+      <h2>2. Compromiso de Conformidad</h2>
+      <p>En nuestra modalidad de diseño a medida, nos comprometemos fielmente a trabajar en estrecha comunicación directa (1 a 1) y realizar los ajustes iterativos necesarios sobre las maquetas de diseño previas hasta que estés completamente conforme con el resultado estético y funcional antes de su despliegue final.</p>
+
+      <h2>3. Responsabilidad sobre los contenidos</h2>
+      <p>El cliente es el único responsable legal del contenido definitivo (textos definitivos, imágenes comerciales, logotipos, marcas registradas) que nos provea para ser incorporados en el sitio web adaptado o desarrollado. Voxel actúa únicamente como diseñador y desarrollador técnico del sitio.</p>
+
+      <h2>4. Propiedad Intelectual</h2>
+      <p>Una vez completados los pagos acordados por el servicio, todos los derechos sobre el código frontend final e interfaces diseñadas para tu negocio te pertenecen por completo. Voxel se reserva el derecho de exhibir capturas del proyecto finalizado en su portafolio comercial de trabajos realizados, salvo solicitud en contrario por parte del cliente.</p>
+
+      <h2>5. Soporte y Contacto</h2>
+      <p>Para consultas técnicas sobre desarrollos en curso, presupuestos personalizados o dudas vinculadas a estas condiciones, podés comunicarte directamente con nosotros enviando un correo a agenciawebvoxel@gmail.com.</p>
+    </div>
+
+    <div class="popup-footer">
+      <button class="btn-close" onclick="window.close()">Entendido y cerrar</button>
+    </div>
+  </div>
+</body>
+
+</html>

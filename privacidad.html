@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | Voxel</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+  <style>
+    :root {
+      --violet: #7c3dff;
+      --violet-strong: #9a5cff;
+      --ink: #111827;
+      --night: #080b16;
+      --void: #050611;
+      --panel: #0e1222;
+      --panel-strong: #141a2d;
+      --muted-dark: #a5afc3;
+      --soft: #f7f8fb;
+      --white: #ffffff;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: linear-gradient(180deg, #050611 0%, #080b16 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .popup-container {
+      width: 100%;
+      max-width: 680px;
+      background: rgba(14, 18, 34, 0.95);
+      border: 1px solid rgba(151, 93, 255, 0.2);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(151, 93, 255, 0.15);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .btn-close {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 180ms ease;
+    }
+
+    .btn-close:hover {
+      background: var(--white);
+      color: var(--ink);
+      transform: translateY(-1px);
+    }
+
+    .legal-content {
+      color: var(--muted-dark);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-height: 60vh;
+      overflow-y: auto;
+      padding-right: 12px;
+    }
+
+    /* Scrollbar personalizado */
+    .legal-content::-webkit-scrollbar {
+      width: 6px;
+    }
+    .legal-content::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 999px;
+    }
+    .legal-content::-webkit-scrollbar-thumb {
+      background: rgba(124, 61, 255, 0.3);
+      border-radius: 999px;
+    }
+    .legal-content::-webkit-scrollbar-thumb:hover {
+      background: var(--violet);
+    }
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      color: var(--white);
+    }
+
+    p { margin-top: 0; margin-bottom: 16px; }
+
+    .legal-card {
+      padding: 18px;
+      background: rgba(5, 6, 17, 0.6);
+      border: 1px solid rgba(151, 93, 255, 0.1);
+      border-radius: var(--radius);
+      margin-bottom: 16px;
+    }
+
+    .popup-footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <h1>Política de Privacidad</h1>
+      <button class="btn-close" onclick="window.close()">Cerrar ventana</button>
+    </div>
+
+    <div class="legal-content">
+      <p>En Voxel nos tomamos muy en serio la privacidad de tus datos. Aquí explicamos cómo tratamos la información que ingresas voluntariamente en nuestro sitio web.</p>
+
+      <h2>1. Información que recopilamos</h2>
+      <p>Cuando utilizas nuestro formulario de diagnóstico o contacto, recopilamos únicamente los datos que nos proporcionas de manera directa:</p>
+      <div class="legal-card">
+        <p style="margin-bottom: 8px;">• <strong>Nombre:</strong> Para dirigirnos a vos de forma personalizada.</p>
+        <p style="margin-bottom: 8px;">• <strong>Email:</strong> Para responder a tus consultas técnicas o presupuestos.</p>
+        <p style="margin-bottom: 0;">• <strong>Detalles del proyecto:</strong> Cualquier información o requerimiento que decidas detallar sobre tu negocio.</p>
+      </div>
+
+      <h2>2. Uso de los datos personales</h2>
+      <p>Los datos ingresados se utilizan única y exclusivamente para procesar tu solicitud de cotización o diagnóstico web y ponernos en contacto con vos 1 a 1 para evaluar el diseño de tu sitio.</p>
+      <p><strong>No realizamos prácticas de SPAM</strong> ni utilizaremos tus datos para listas de publicidad masiva.</p>
+
+      <h2>3. Proveedores de Terceros</h2>
+      <p>Para el envío correcto de los correos desde el formulario, utilizamos <strong>Web3Forms</strong> de forma cifrada (HTTPS) hacia nuestra casilla oficial, garantizando la seguridad en el tránsito de la información.</p>
+
+      <h2>4. Confidencialidad</h2>
+      <p>Voxel no vende, alquila, distribue ni comparte tus datos personales con ninguna empresa o entidad externa bajo ningún concepto.</p>
+
+      <h2>5. Tus derechos</h2>
+      <p>Podés solicitar la eliminación total de tus datos de nuestros registros en cualquier momento escribiéndonos directamente a agenciawebvoxel@gmail.com.</p>
+    </div>
+
+    <div class="popup-footer">
+      <button class="btn-close" onclick="window.close()">Entendido y cerrar</button>
+    </div>
+  </div>
+</body>
+
+</html>
