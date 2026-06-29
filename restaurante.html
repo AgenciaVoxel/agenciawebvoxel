@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang=es>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=description content="Mesa Urbana, restaurante cálido y premium con cocina de temporada, reservas y experiencia gastronómica.">
+<title>Mesa Urbana | Cocina cálida de temporada</title>
+<link rel=icon type=image/svg+xml href=assets/logo-mark.svg>
+<style>:root{--black:#15100d;--black-soft:#211814;--wine:#6f1d2f;--wine-dark:#48121f;--terracotta:#bf6542;--terracotta-dark:#9c4a30;--cream:#fbf3e6;--cream-soft:#fff9ef;--beige:#e5d0b2;--olive:#687246;--olive-dark:#4d5633;--gold:#c9a15f;--white:#fff;--muted:#796656;--line-light:rgba(21,16,13,0.14);--line-dark:rgba(251,243,230,0.16);--shadow:0 22px 58px rgba(21,16,13,0.16);--radius:8px;--container:1160px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--black);font-family:"Segoe UI",Arial,sans-serif;background:var(--cream-soft);line-height:1.6;letter-spacing:0}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}.container{width:min(var(--container),calc(100% - 40px));margin:0 auto}.section{padding:100px 0}.section-dark{color:var(--cream);background:var(--black)}.section-warm{background:var(--cream)}.section-header{max-width:760px;margin-bottom:44px}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--terracotta);font-size:.78rem;font-weight:850;text-transform:uppercase}.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}.section-dark .eyebrow{color:var(--gold)}h1,h2,h3,p{margin-top:0}h1,h2,h3,.brand,.price,.stat-value{font-family:Georgia,"Times New Roman",serif;letter-spacing:0}h1{max-width:760px;margin-bottom:22px;color:var(--cream-soft);font-size:5.55rem;line-height:.94}h2{margin-bottom:18px;color:var(--black);font-size:3.35rem;line-height:1.06}.section-dark h2,.section-dark h3{color:var(--cream-soft)}h3{margin-bottom:10px;color:var(--black);font-size:1.28rem;line-height:1.25}.lead{color:var(--muted);font-size:1.1rem;line-height:1.78}.section-dark .lead{color:rgba(251,243,230,0.76)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:1px solid transparent;border-radius:var(--radius);font-weight:850;line-height:1;transition:transform 180ms ease,background 180ms ease,border-color 180ms ease,color 180ms ease}.btn:hover{transform:translateY(-2px)}.btn-primary{color:var(--cream-soft);background:var(--terracotta);border-color:var(--terracotta);box-shadow:0 16px 34px rgba(191,101,66,0.24)}.btn-primary:hover{background:var(--terracotta-dark);border-color:var(--terracotta-dark)}.btn-outline{color:var(--cream-soft);background:transparent;border-color:rgba(251,243,230,0.34)}.btn-outline:hover{color:var(--black);background:var(--cream)}.btn-dark{color:var(--cream-soft);background:var(--black)}.site-header{position:sticky;top:0;z-index:30;background:rgba(255,249,239,0.92);border-bottom:1px solid rgba(21,16,13,0.1);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}.brand{display:inline-flex;align-items:center;gap:12px;color:var(--black);font-size:1.2rem;font-weight:900}.brand-mark{display:grid;place-items:center;width:38px;height:38px;color:var(--cream-soft);background:var(--wine);border-radius:50%;font-family:"Segoe UI",Arial,sans-serif;font-size:.76rem;font-weight:900;outline:2px solid var(--gold);outline-offset:3px}.nav-links{display:flex;align-items:center;gap:26px;color:#5f4d40;font-size:.94rem;font-weight:750}.nav-links a:hover{color:var(--wine)}.nav-links .btn{min-height:44px;padding:0 18px;color:var(--cream-soft)}.hero{position:relative;overflow:hidden;color:var(--cream);background:radial-gradient(circle at 78% 24%,rgba(191,101,66,0.32),transparent 34%),linear-gradient(90deg,rgba(21,16,13,0.98) 0,rgba(33,24,20,0.94) 48%,rgba(72,18,31,0.88) 100%),var(--black)}.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(251,243,230,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(251,243,230,0.035) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}.hero-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,0.94fr) minmax(360px,0.86fr);align-items:center;gap:56px;min-height:calc(100vh - 76px);padding:68px 0}.hero-copy .lead{max-width:650px;margin-bottom:30px;color:rgba(251,243,230,0.78)}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:42px}.hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:700px}.proof-item{padding-top:18px;border-top:1px solid var(--line-dark)}.proof-item strong{display:block;color:var(--cream-soft);font-size:1.3rem;line-height:1.1}.proof-item span{color:rgba(251,243,230,0.66);font-size:.9rem}.hero-visual{position:relative;min-height:560px;background:var(--black-soft);border:1px solid rgba(251,243,230,0.16);border-radius:var(--radius);box-shadow:0 28px 70px rgba(0,0,0,0.24);overflow:hidden}.hero-visual::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(21,16,13,0.64),rgba(21,16,13,0.12) 48%,rgba(21,16,13,0.38)),linear-gradient(180deg,rgba(21,16,13,0.08),rgba(21,16,13,0.58));pointer-events:none}.hero-visual img{width:100%;height:100%;min-height:560px;object-fit:cover;object-position:72% center;filter:saturate(1.02) contrast(1.04)}.menu-note{position:absolute;left:44px;right:44px;bottom:32px;z-index:2;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:20px;color:var(--black);background:var(--cream-soft);border-radius:var(--radius);box-shadow:var(--shadow)}.menu-note strong{display:block;margin-bottom:4px;font-family:Georgia,"Times New Roman",serif;font-size:1.2rem}.menu-note span{color:var(--muted);font-size:.9rem}.menu-note-badge{display:grid;place-items:center;width:58px;height:58px;color:var(--cream-soft);background:var(--wine);border-radius:50%;font-weight:900}.about-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:start}.about-card{padding:34px;color:var(--cream);background:var(--black);border-radius:var(--radius);box-shadow:var(--shadow)}.about-card h3{color:var(--cream-soft);font-size:1.7rem}.about-card p{color:rgba(251,243,230,0.74)}.about-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}.about-stats div{padding:18px;background:rgba(251,243,230,0.07);border:1px solid var(--line-dark);border-radius:var(--radius)}.stat-value{display:block;color:var(--gold);font-size:1.7rem;line-height:1;font-weight:900}.about-stats span:not(.stat-value){color:rgba(251,243,230,0.68);font-size:.9rem}.about-copy p{color:var(--muted);font-size:1.04rem}.signature-line{display:inline-flex;align-items:center;gap:12px;margin-top:20px;color:var(--wine);font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;font-weight:900}.signature-line::before{content:"";width:42px;height:2px;background:var(--gold)}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.menu-card,.benefit-card,.testimonial-card,.faq-item{background:var(--cream-soft);border:1px solid var(--line-light);border-radius:var(--radius);box-shadow:var(--shadow)}.menu-card{overflow:hidden;transition:transform 180ms ease,box-shadow 180ms ease}.menu-card:hover{transform:translateY(-5px);box-shadow:0 28px 70px rgba(21,16,13,0.2)}.menu-visual{position:relative;min-height:190px;overflow:hidden;background:radial-gradient(circle at 72% 36%,rgba(251,243,230,0.38),transparent 28%),linear-gradient(135deg,rgba(191,101,66,0.74),rgba(111,29,47,0.84)),var(--terracotta)}.menu-card:nth-child(2) .menu-visual{background:radial-gradient(circle at 68% 42%,rgba(251,243,230,0.3),transparent 30%),linear-gradient(135deg,rgba(104,114,70,0.84),rgba(21,16,13,0.78)),var(--olive)}.menu-card:nth-child(3) .menu-visual{background:radial-gradient(circle at 70% 40%,rgba(251,243,230,0.32),transparent 30%),linear-gradient(135deg,rgba(201,161,95,0.82),rgba(156,74,48,0.76)),var(--gold)}.menu-card:nth-child(4) .menu-visual{background:radial-gradient(circle at 70% 40%,rgba(251,243,230,0.32),transparent 30%),linear-gradient(135deg,rgba(72,18,31,0.9),rgba(21,16,13,0.78)),var(--wine)}.menu-card:nth-child(5) .menu-visual{background:radial-gradient(circle at 70% 40%,rgba(251,243,230,0.36),transparent 30%),linear-gradient(135deg,rgba(229,208,178,0.92),rgba(191,101,66,0.7)),var(--beige)}.menu-card:nth-child(6) .menu-visual{background:radial-gradient(circle at 70% 40%,rgba(251,243,230,0.32),transparent 30%),linear-gradient(135deg,rgba(33,24,20,0.92),rgba(104,114,70,0.72)),var(--black-soft)}.menu-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,16,13,0.02),rgba(21,16,13,0.46)),linear-gradient(90deg,rgba(21,16,13,0.18),transparent 54%);pointer-events:none}.menu-visual img{width:100%;height:100%;min-height:190px;object-fit:cover;object-position:72% center;transition:transform 220ms ease}.menu-card:hover .menu-visual img{transform:scale(1.05)}.menu-body{padding:24px}.menu-meta{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.menu-tag{display:inline-flex;padding:7px 10px;color:var(--wine);background:#f2e4d3;border-radius:999px;font-size:.76rem;font-weight:900;text-transform:uppercase}.price{color:var(--black);font-size:1.4rem;font-weight:900}.menu-body p{margin-bottom:0;color:var(--muted)}.benefits-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:36px;align-items:start}.benefit-panel{padding:34px;color:var(--cream);background:var(--black);border-radius:var(--radius);box-shadow:var(--shadow)}.benefit-panel h2{color:var(--cream-soft)}.benefit-panel p{color:rgba(251,243,230,0.76)}.benefit-list{display:grid;gap:16px}.benefit-card{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:24px;box-shadow:none}.benefit-icon{display:grid;place-items:center;width:52px;height:52px;color:var(--cream-soft);background:var(--wine);border-radius:50%;font-family:Georgia,"Times New Roman",serif;font-weight:900}.benefit-card:nth-child(2) .benefit-icon{background:var(--terracotta)}.benefit-card:nth-child(3) .benefit-icon{background:var(--olive)}.benefit-card:nth-child(4) .benefit-icon{color:var(--black);background:var(--gold)}.benefit-card p{margin-bottom:0;color:var(--muted)}.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:230px;gap:18px}.gallery-item{position:relative;overflow:hidden;border:1px solid var(--line-dark);border-radius:var(--radius);background:linear-gradient(180deg,rgba(21,16,13,0.06),rgba(21,16,13,0.74)),linear-gradient(135deg,rgba(191,101,66,0.68),rgba(111,29,47,0.74)),var(--wine);box-shadow:var(--shadow)}.gallery-item img{width:100%;height:100%;object-fit:cover;object-position:72% center;filter:saturate(1.04) contrast(1.04);transition:transform 240ms ease}.gallery-item:hover img{transform:scale(1.05)}.gallery-item.large{grid-row:span 2}.gallery-item::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(21,16,13,0.04),rgba(21,16,13,0.72));pointer-events:none}.gallery-item:nth-child(2){background:linear-gradient(180deg,rgba(21,16,13,0.06),rgba(21,16,13,0.7)),radial-gradient(circle at 68% 42%,rgba(251,243,230,0.32),transparent 32%),var(--olive)}.gallery-item:nth-child(3){background:linear-gradient(180deg,rgba(21,16,13,0.06),rgba(21,16,13,0.7)),radial-gradient(circle at 68% 42%,rgba(251,243,230,0.36),transparent 32%),var(--terracotta)}.gallery-item:nth-child(4){background:linear-gradient(180deg,rgba(21,16,13,0.06),rgba(21,16,13,0.7)),linear-gradient(135deg,rgba(229,208,178,0.5),rgba(21,16,13,0.4)),var(--black-soft)}.gallery-item:nth-child(5){background:linear-gradient(180deg,rgba(21,16,13,0.06),rgba(21,16,13,0.7)),linear-gradient(135deg,rgba(201,161,95,0.46),rgba(111,29,47,0.62)),var(--wine-dark)}.gallery-item span{position:absolute;left:24px;bottom:22px;z-index:2;color:var(--cream-soft);font-family:Georgia,"Times New Roman",serif;font-size:1.32rem;font-weight:900}.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial-card{padding:28px;background:var(--cream-soft);box-shadow:none}.stars{margin-bottom:18px;color:var(--gold)}.testimonial-card p{color:var(--muted)}.testimonial-author{display:block;margin-top:20px;color:var(--wine);font-weight:900}.location-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:stretch}.location-card{padding:34px;color:var(--cream);background:var(--black);border-radius:var(--radius);box-shadow:var(--shadow)}.location-card h2{color:var(--cream-soft)}.schedule-list{display:grid;gap:12px;margin:26px 0 0;padding:0;list-style:none}.schedule-list li{display:flex;justify-content:space-between;gap:18px;padding-bottom:12px;border-bottom:1px solid var(--line-dark);color:rgba(251,243,230,0.76)}.schedule-list strong{color:var(--cream-soft)}.map-placeholder{position:relative;min-height:420px;background:linear-gradient(135deg,rgba(104,114,70,0.26),transparent),var(--cream);border:1px solid var(--line-light);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.map-placeholder::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(21,16,13,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(21,16,13,0.06) 1px,transparent 1px);background-size:46px 46px}.map-pin{position:absolute;left:50%;top:48%;width:78px;height:78px;transform:translate(-50%,-50%) rotate(45deg);background:var(--terracotta);border-radius:50% 50% 50% 8px;box-shadow:var(--shadow)}.map-pin::before{content:"";position:absolute;inset:22px;background:var(--cream);border-radius:50%}.faq-list{display:grid;gap:14px}.faq-item{padding:24px 26px;background:var(--cream-soft);box-shadow:none}.faq-item p{margin-bottom:0;color:var(--muted)}.final-cta{padding:110px 0;color:var(--cream);background:radial-gradient(circle at 78% 28%,rgba(191,101,66,0.26),transparent 34%),linear-gradient(90deg,var(--black),var(--wine-dark))}.cta-panel{display:grid;grid-template-columns:1fr .82fr;gap:34px;align-items:center;padding:42px;background:rgba(251,243,230,0.06);border:1px solid var(--line-dark);border-radius:var(--radius);box-shadow:0 28px 70px rgba(0,0,0,0.2)}.cta-panel h2{color:var(--cream-soft)}.cta-panel p{color:rgba(251,243,230,0.76)}.reserve-card{padding:28px;color:var(--black);background:var(--cream-soft);border-radius:var(--radius)}.reserve-list{display:grid;gap:12px;margin:0 0 22px;padding:0;list-style:none}.reserve-list li{display:flex;justify-content:space-between;gap:18px;padding-bottom:12px;border-bottom:1px solid var(--line-light);color:var(--muted)}.reserve-list strong{color:var(--black)}.reserve-card .btn{width:100%}.site-footer{padding:52px 0;color:rgba(251,243,230,0.72);background:#0b0806}.footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:30px}.footer-grid h3,.footer-grid strong{color:var(--cream-soft)}.footer-grid p,.footer-grid a{color:rgba(251,243,230,0.68)}.footer-links{display:grid;gap:8px}.footer-bottom{display:flex;justify-content:space-between;gap:18px;margin-top:36px;padding-top:22px;border-top:1px solid var(--line-dark);font-size:.9rem}@media(max-width:1040px){h1{font-size:4.35rem}h2{font-size:2.85rem}.hero-layout,.about-layout,.benefits-layout,.location-layout,.cta-panel{grid-template-columns:1fr}.hero-layout{min-height:auto}.menu-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.container{width:min(100% - 28px,var(--container))}.section{padding:76px 0}.site-header{position:static}.nav{min-height:auto;padding:18px 0}.nav-links{display:none}h1{font-size:3.28rem}h2{font-size:2.14rem}.lead{font-size:1rem}.hero-layout{padding:58px 0 76px}.hero-proof,.menu-grid,.testimonials-grid,.footer-grid,.about-stats,.gallery-grid{grid-template-columns:1fr}.hero-visual{min-height:460px}.hero-visual img{min-height:460px}.menu-note{grid-template-columns:1fr;left:28px;right:28px}.benefit-card{grid-template-columns:1fr}.gallery-item.large{grid-row:span 1}.final-cta{padding:76px 0}.cta-panel{padding:28px}.reserve-list li,.schedule-list li,.footer-bottom{flex-direction:column}}@media(max-width:440px){h1{font-size:2.62rem}.hero-actions{flex-direction:column;align-items:stretch}.btn{width:100%}.hero-visual{min-height:390px}.hero-visual img{min-height:390px}}</style>
+</head>
+<body>
+<header class=site-header>
+<div class="container nav">
+<a class=brand href=#inicio aria-label="Ir al inicio de Mesa Urbana">
+<span class=brand-mark aria-hidden=true>MU</span>
+Mesa Urbana
+</a>
+<nav class=nav-links aria-label="Navegación principal">
+<a href=#restaurante>Restaurante</a>
+<a href=#menu>Menú</a>
+<a href=#galeria>Galería</a>
+<a href=#ubicacion>Ubicación</a>
+<a class="btn btn-primary" href=#reserva>Reservar mesa</a>
+</nav>
+</div>
+</header>
+<main id=inicio>
+<section class=hero aria-label="Presentación principal de Mesa Urbana">
+<div class="container hero-layout">
+<div class=hero-copy>
+<span class=eyebrow>Cocina de temporada · Mesa cálida</span>
+<h1>Sabores honestos para quedarse un rato más.</h1>
+<p class=lead>
+Un restaurante de cocina cálida, ingredientes frescos y ambiente íntimo para compartir
+platos memorables, una buena copa y conversaciones sin prisa.
+</p>
+<div class=hero-actions>
+<a class="btn btn-primary" href=#reserva>Reservar mesa</a>
+<a class="btn btn-outline" href=#menu>Ver menú destacado</a>
+</div>
+<div class=hero-proof>
+<div class=proof-item>
+<strong>4.8/5</strong>
+<span>valoración de comensales</span>
+</div>
+<div class=proof-item>
+<strong>Temporada</strong>
+<span>ingredientes frescos</span>
+</div>
+<div class=proof-item>
+<strong>32 mesas</strong>
+<span>ambiente cuidado</span>
+</div>
+</div>
+</div>
+<div class=hero-visual aria-label="Plato destacado y copa de vino">
+<img src=assets/restaurante-hero.png alt="Mesa servida en un restaurante cálido con plato principal, copa de vino y luz ambiental">
+<div class=menu-note>
+<div>
+<strong>Especial de la casa</strong>
+<span>Lomo braseado, puré ahumado, vegetales y reducción de vino.</span>
+</div>
+<span class=menu-note-badge>$620</span>
+</div>
+</div>
+</div>
+</section>
+<section class=section id=restaurante>
+<div class="container about-layout">
+<div class=about-card>
+<span class=eyebrow>Sobre Mesa Urbana</span>
+<h3>Cocina de estación, ambiente acogedor y una mesa pensada para compartir.</h3>
+<p>
+Nuestra cocina combina productos frescos, recetas de raíz casera y una mirada actual
+para crear platos con sabor, textura y carácter.
+</p>
+<div class=about-stats>
+<div>
+<span class=stat-value>6</span>
+<span>platos insignia</span>
+</div>
+<div>
+<span class=stat-value>18:30</span>
+<span>apertura de cena</span>
+</div>
+</div>
+</div>
+<div class=about-copy>
+<h2>Una experiencia gastronómica con calidez de casa y detalle de restaurante.</h2>
+<p>
+En Mesa Urbana cada plato nace de ingredientes simples tratados con cuidado. Trabajamos
+con productores locales, panes de masa madre, verduras de estación y preparaciones lentas
+que llenan la mesa de aromas.
+</p>
+<p>
+El salón acompaña con luz baja, materiales nobles y atención cercana. Vení para una cena
+íntima, una reunión con amigos o una celebración pequeña con buen gusto.
+</p>
+<span class=signature-line>Cocina cálida, mesa honesta</span>
+</div>
+</div>
+</section>
+<section class="section section-warm" id=menu>
+<div class=container>
+<div class=section-header>
+<span class=eyebrow>Menú destacado</span>
+<h2>Platos claros, sabrosos y servidos con intención.</h2>
+<p class=lead>
+Una selección de entradas, principales, pastas, carnes, postres y bebidas para abrir el apetito desde la web.
+</p>
+</div>
+<div class=menu-grid>
+<article class=menu-card>
+<div class=menu-visual aria-label="Entrada de burrata y tomates">
+<img src=assets/restaurante-hero.png alt="Entrada servida en mesa cálida" style="object-position:86% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Entradas</span>
+<span class=price>$340</span>
+</div>
+<h3>Burrata, tomates y albahaca</h3>
+<p>Queso cremoso, tomates asados, aceite de hierbas y pan tostado.</p>
+</div>
+</article>
+<article class=menu-card>
+<div class=menu-visual aria-label="Plato principal de vegetales y hierbas">
+<img src=assets/restaurante-hero.png alt="Plato principal con hierbas frescas" style="object-position:78% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Principales</span>
+<span class=price>$520</span>
+</div>
+<h3>Risotto de hongos y oliva</h3>
+<p>Arroz cremoso, hongos salteados, parmesano y aceite de oliva verde.</p>
+</div>
+</article>
+<article class=menu-card>
+<div class=menu-visual aria-label="Pasta casera">
+<img src=assets/restaurante-hero.png alt="Mesa de restaurante con vajilla y plato de autor" style="object-position:64% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Pastas</span>
+<span class=price>$480</span>
+</div>
+<h3>Ravioles de calabaza y nuez</h3>
+<p>Pasta artesanal, manteca tostada, queso curado y salvia fresca.</p>
+</div>
+</article>
+<article class=menu-card>
+<div class=menu-visual aria-label="Carne braseada">
+<img src=assets/restaurante-hero.png alt="Plato principal de carne en restaurante premium" style="object-position:88% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Carnes</span>
+<span class=price>$620</span>
+</div>
+<h3>Lomo braseado con puré ahumado</h3>
+<p>Cocción lenta, reducción de vino, vegetales y terminación de hierbas.</p>
+</div>
+</article>
+<article class=menu-card>
+<div class=menu-visual aria-label="Postre de chocolate">
+<img src=assets/restaurante-hero.png alt="Detalle de mesa cálida con vajilla y luces" style="object-position:52% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Postres</span>
+<span class=price>$280</span>
+</div>
+<h3>Chocolate, café y sal marina</h3>
+<p>Crema intensa, crocante de cacao y un final justo de sal.</p>
+</div>
+</article>
+<article class=menu-card>
+<div class=menu-visual aria-label="Cóctel de autor">
+<img src=assets/restaurante-hero.png alt="Copas y bebida en ambiente cálido de restaurante" style="object-position:72% center">
+</div>
+<div class=menu-body>
+<div class=menu-meta>
+<span class=menu-tag>Bebidas</span>
+<span class=price>$260</span>
+</div>
+<h3>Cóctel urbano de autor</h3>
+<p>Notas cítricas, hierbas frescas, vino blanco y un final seco.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class=section id=diferenciales>
+<div class="container benefits-layout">
+<div class=benefit-panel>
+<span class=eyebrow>Por qué elegirnos</span>
+<h2>Ingredientes frescos, recetas con alma y atención cuidada.</h2>
+<p>
+Una buena comida no se recuerda solo por el plato. Se recuerda por el aroma,
+la mesa, el ritmo del servicio y la sensación de estar en el lugar correcto.
+</p>
+</div>
+<div class=benefit-list>
+<article class=benefit-card>
+<span class=benefit-icon>01</span>
+<div>
+<h3>Ingredientes frescos</h3>
+<p>Trabajamos con productos de temporada y proveedores locales seleccionados.</p>
+</div>
+</article>
+<article class=benefit-card>
+<span class=benefit-icon>02</span>
+<div>
+<h3>Recetas especiales</h3>
+<p>Preparaciones lentas, sabores reconocibles y pequeños giros de autor.</p>
+</div>
+</article>
+<article class=benefit-card>
+<span class=benefit-icon>03</span>
+<div>
+<h3>Ambiente único</h3>
+<p>Luz cálida, sala íntima y una estética pensada para disfrutar sin apuro.</p>
+</div>
+</article>
+<article class=benefit-card>
+<span class=benefit-icon>04</span>
+<div>
+<h3>Atención cercana</h3>
+<p>Un equipo atento, amable y presente para acompañar cada momento de la mesa.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-dark" id=galeria>
+<div class=container>
+<div class=section-header>
+<span class=eyebrow>Galería</span>
+<h2>Una experiencia que empieza por la vista.</h2>
+<p class=lead>
+Platos, detalles de mesa, luz cálida y una sala que invita a reservar.
+</p>
+</div>
+<div class=gallery-grid aria-label="Galería visual del restaurante">
+<div class="gallery-item large"><img src=assets/restaurante-hero.png alt="Plato insignia servido en mesa elegante"><span>Plato insignia</span></div>
+<div class=gallery-item><img src=assets/restaurante-hero.png alt="Interior cálido del restaurante" style="object-position:56% center"><span>Interior cálido</span></div>
+<div class=gallery-item><img src=assets/restaurante-hero.png alt="Copa servida en mesa gastronómica" style="object-position:70% center"><span>Copa de autor</span></div>
+<div class=gallery-item><img src=assets/restaurante-hero.png alt="Mesa servida con platos y vajilla" style="object-position:84% center"><span>Mesa servida</span></div>
+<div class=gallery-item><img src=assets/restaurante-hero.png alt="Detalle gastronómico artesanal" style="object-position:92% center"><span>Postre artesanal</span></div>
+</div>
+</div>
+</section>
+<section class=section>
+<div class=container>
+<div class=section-header>
+<span class=eyebrow>Testimonios</span>
+<h2>Comensales que vuelven por el sabor y el ambiente.</h2>
+</div>
+<div class=testimonials-grid>
+<article class=testimonial-card>
+<div class=stars>★★★★★</div>
+<p>“La comida tiene sabor casero pero presentación de restaurante. El ambiente es cálido y muy cuidado.”</p>
+<span class=testimonial-author>Camila R.</span>
+</article>
+<article class=testimonial-card>
+<div class=stars>★★★★★</div>
+<p>“Reservamos para una cena de amigos y salió perfecto. Carta clara, buena atención y platos generosos.”</p>
+<span class=testimonial-author>Federico M.</span>
+</article>
+<article class=testimonial-card>
+<div class=stars>★★★★★</div>
+<p>“El lomo braseado y el postre de chocolate fueron increíbles. Ideal para una noche tranquila.”</p>
+<span class=testimonial-author>Agustina P.</span>
+</article>
+</div>
+</div>
+</section>
+<section class="section section-warm" id=ubicacion>
+<div class="container location-layout">
+<div class=location-card>
+<span class=eyebrow>Horarios y ubicación</span>
+<h2>Estamos en el corazón de la ciudad.</h2>
+<p>
+Av. Gourmet 1840, esquina Mercado Viejo, Montevideo.
+Recomendamos reservar para cenas de viernes y sábado.
+</p>
+<ul class=schedule-list>
+<li><strong>Martes a jueves</strong><span>18:30 - 23:00</span></li>
+<li><strong>Viernes y sábado</strong><span>18:30 - 00:30</span></li>
+<li><strong>Domingo</strong><span>12:00 - 16:00</span></li>
+<li><strong>Lunes</strong><span>Cerrado</span></li>
+</ul>
+</div>
+<div class=map-placeholder aria-label="Mapa de ubicación del restaurante">
+<span class=map-pin aria-hidden=true></span>
+</div>
+</div>
+</section>
+<section class=section id=faq>
+<div class=container>
+<div class=section-header>
+<span class=eyebrow>Preguntas frecuentes</span>
+<h2>Todo lo que querés saber antes de venir.</h2>
+</div>
+<div class=faq-list>
+<article class=faq-item>
+<h3>¿Conviene reservar?</h3>
+<p>Sí, especialmente viernes, sábados y domingos al mediodía. Aceptamos reservas online o por teléfono.</p>
+</article>
+<article class=faq-item>
+<h3>¿Tienen opciones vegetarianas?</h3>
+<p>Sí. El menú incluye entradas, pastas y principales vegetarianos con productos de temporada.</p>
+</article>
+<article class=faq-item>
+<h3>¿Se pueden hacer eventos privados?</h3>
+<p>Sí. Coordinamos cenas de empresa, cumpleaños y encuentros pequeños con menú cerrado.</p>
+</article>
+<article class=faq-item>
+<h3>¿Hacen delivery o pedidos para retirar?</h3>
+<p>Algunos platos están disponibles para retirar. El delivery se habilita según disponibilidad de cocina.</p>
+</article>
+</div>
+</div>
+</section>
+<section class=final-cta id=reserva>
+<div class=container>
+<div class=cta-panel>
+<div>
+<span class=eyebrow>Reservá tu mesa</span>
+<h2>Vení por la comida. Quedate por la experiencia.</h2>
+<p>
+Elegí tu horario, contanos cuántos vienen y preparamos una mesa para que la noche empiece bien.
+</p>
+<a class="btn btn-primary" href="mailto:reservas@mesaurbana.com?subject=Reserva%20de%20mesa">Solicitar reserva</a>
+</div>
+<aside class=reserve-card aria-label="Información rápida de reserva">
+<ul class=reserve-list>
+<li><strong>Cena</strong><span>Mar a sáb desde 18:30</span></li>
+<li><strong>Mediodía</strong><span>Domingos 12:00 - 16:00</span></li>
+<li><strong>Reservas</strong><span>+598 2400 0000</span></li>
+</ul>
+<a class="btn btn-dark" href=tel:+59824000000>Llamar ahora</a>
+</aside>
+</div>
+</div>
+</section>
+</main>
+<footer class=site-footer>
+<div class=container>
+<div class=footer-grid>
+<div>
+<a class=brand href=#inicio aria-label="Volver al inicio de Mesa Urbana">
+<span class=brand-mark aria-hidden=true>MU</span>
+Mesa Urbana
+</a>
+<p>Cocina de temporada, ambiente cálido y una mesa pensada para compartir.</p>
+</div>
+<div>
+<h3>Dirección</h3>
+<p>Av. Gourmet 1840<br>Montevideo, Uruguay</p>
+</div>
+<div>
+<h3>Contacto</h3>
+<p>+598 2400 0000<br>reservas@mesaurbana.com</p>
+</div>
+<div>
+<h3>Horario</h3>
+<p>Mar a sáb: 18:30 - 00:30<br>Dom: 12:00 - 16:00</p>
+<div class=footer-links>
+<a href=#>Instagram</a>
+<a href=#>Facebook</a>
+<a href=index.html#plantillas target=_top>Volver a Voxel</a>
+</div>
+</div>
+</div>
+<div class=footer-bottom>
+<span>© 2026 Mesa Urbana. Todos los derechos reservados.</span>
+<span style=display:inline-flex;align-items:center;gap:8px>
+Plantilla demo para Voxel.
+<img src=assets/logo-mark.svg alt="Voxel Logo" style=width:18px;height:auto>
+</span>
+</div>
+</div>
+</footer>
+</body>
+</html>
