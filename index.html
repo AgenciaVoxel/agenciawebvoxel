@@ -202,7 +202,7 @@ explique mejor lo que ofrece y convierta visitas en consultas reales.
 <div class="container quality-layout">
 <div class=quality-copy>
 <span class=eyebrow>Calidad Voxel</span>
-<h2>Una web no debe solo verse bonita. Debe vender por vos.</h2>
+<h2>Una web no debería verse bonita solamente. Debería ayudarte a vender.</h2>
 </div>
 <div>
 <div class=quality-grid>
@@ -225,8 +225,7 @@ explique mejor lo que ofrece y convierta visitas en consultas reales.
 <div class=faq-list>
 <article class=faq-item><h3>¿Puedo partir de una maqueta y adaptarla?</h3><p>Sí. Podemos usar una estructura premium y adaptarla a tus colores, textos y servicios.</p></article>
 <article class=faq-item><h3>¿La web queda funciona en celulares?</h3><p>Sí, nuestras webs se adaptan a los dispositivos de tus clientes.</p></article>
-<article class=faq-item><h3>¿Se puede diseñar una web desde 0, hecha a medida para mi negocio?</h3><p>Sí, es nuestra mayor característica. Contactamos 1 a 1 con vos para lograr la web perfecta para tu negocio.</p></article>
-</div>
+<article class=faq-item><h3>¿Se puede diseñar una web desde 0, hecha a medida para mi negocio?</h3><p>Sí, es nuestra mayor característica. Contactamos 1 a 1 con vos para lograr la web perfecta para tu negocio.</p></article> </div>
 </div>
 </section>
 <section class=final-cta id=contacto>
@@ -236,14 +235,16 @@ explique mejor lo que ofrece y convierta visitas en consultas reales.
 <span class=pill><span class=dot></span>Diagnóstico web</span>
 <h2>Contame qué necesitás y te propongo una estructura para tu web.</h2>
 </div>
-<form class=contact-box action=mailto:hola@tuagencia.com method=post enctype=text/plain>
+<form id=form class=contact-box action=https://api.web3forms.com/submit method=post>
 <label style=color:white;font-size:.85rem;margin-bottom:5px;display:block>Nombre</label>
+<input type=hidden name=access_key value=bef754de-e8a0-4e49-904f-11dc425d42b6>
 <input name=Nombre type=text placeholder="Tu nombre" required>
 <label style=color:white;font-size:.85rem;margin-bottom:5px;display:block>Email</label>
 <input name=Email type=email placeholder=tu@email.com required>
 <label style=color:white;font-size:.85rem;margin-bottom:5px;display:block>Proyecto</label>
-<textarea name=Proyecto placeholder="Ej: web para restaurante, barbería..."></textarea>
+<textarea name=Proyecto placeholder="Ej: web de Ecommerce para una tienda de..."></textarea>
 <button class="btn btn-dark" type=submit>Enviar solicitud</button>
+<div id=form-message style="display:none;margin-top:14px;padding:12px;border-radius:var(--radius);font-size:.9rem;font-weight:750;text-align:center;transition:all .3s ease"></div>
 </form>
 </div>
 </div>
@@ -259,6 +260,7 @@ explique mejor lo que ofrece y convierta visitas en consultas reales.
 </div>
 </div>
 </footer>
-<script>const mockupCards=document.querySelectorAll(".template-card");const mockupOverlay=document.querySelector("#maquetas-integradas");const mockupTitle=document.querySelector("[data-mockup-title]");const closeMockupButtons=document.querySelectorAll("[data-close-mockup]");const visorDemo=document.querySelector("#visor-demo");const mockupNames={restaurant:"Mesa Urbana",lawyer:"Lexora Estudio Jurídico",barber:"Barbería Vértice"};const mockupFiles={restaurant:"restaurante.html",lawyer:"abogados.html",barber:"barberia.html"};const openMockup=(selectedMockup)=>{if(mockupTitle)mockupTitle.textContent=mockupNames[selectedMockup]||"Demo Voxel";if(visorDemo)visorDemo.src=mockupFiles[selectedMockup]||"";mockupOverlay.classList.add("is-open");document.body.classList.add("demo-open");mockupOverlay.scrollTo({top:0});};const closeMockup=()=>{mockupOverlay.classList.remove("is-open");document.body.classList.remove("demo-open");if(visorDemo)visorDemo.src="";};mockupCards.forEach((card)=>{card.addEventListener("click",(event)=>{event.preventDefault();openMockup(card.dataset.mockup);});});closeMockupButtons.forEach(btn=>btn.addEventListener("click",closeMockup));mockupOverlay.addEventListener("click",(event)=>{if(event.target===mockupOverlay){closeMockup();}});document.addEventListener("keydown",(event)=>{if(event.key==="Escape"&&mockupOverlay.classList.contains("is-open")){closeMockup();}});</script>
+<script>const mockupCards=document.querySelectorAll(".template-card");const mockupOverlay=document.querySelector("#maquetas-integradas");const mockupTitle=document.querySelector("[data-mockup-title]");const closeMockupButtons=document.querySelectorAll("[data-close-mockup]");const visorDemo=document.querySelector("#visor-demo");const mockupNames={restaurant:"Mesa Urbana",lawyer:"Lexora Estudio Jurídico",barber:"Barbería Vértice"};const mockupFiles={restaurant:"restaurante.html",lawyer:"abogados.html",barber:"barberia.html"};const openMockup=(selectedMockup)=>{if(mockupTitle)mockupTitle.textContent=mockupNames[selectedMockup]||"Demo Voxel";if(visorDemo)visorDemo.src=mockupFiles[selectedMockup]||"";mockupOverlay.classList.add("is-open");document.body.classList.add("demo-open");mockupOverlay.scrollTo({top:0});};const closeMockup=()=>{mockupOverlay.classList.remove("is-open");document.body.classList.remove("demo-open");if(visorDemo)visorDemo.src="";};mockupCards.forEach((card)=>{card.addEventListener("click",(event)=>{event.preventDefault();openMockup(card.dataset.mockup);});});closeMockupButtons.forEach(btn=>btn.addEventListener("click",closeMockup));mockupOverlay.addEventListener("click",(event)=>{if(event.target===mockupOverlay){closeMockup();}});document.addEventListener("keydown",(event)=>{if(event.key==="Escape"&&mockupOverlay.classList.contains("is-open")){closeMockup();}});const form=document.getElementById('form');if(form){const submitBtn=form.querySelector('button[type="submit"]');const formMessage=document.getElementById('form-message');form.addEventListener('submit',async(e)=>{e.preventDefault();const formData=new FormData(form);const originalText=submitBtn.textContent;submitBtn.textContent="Enviando...";submitBtn.disabled=true;if(formMessage)formMessage.style.display="none";try{const response=await fetch("https://api.web3forms.com/submit",{method:"POST",body:formData});const data=await response.json();if(response.ok){if(formMessage){formMessage.style.display="block";formMessage.style.background="rgba(124, 61, 255, 0.2)";formMessage.style.border="1px solid var(--violet)";formMessage.style.color="#ffffff";formMessage.textContent="¡Solicitud enviada! Te responderemos a la brevedad.";}
+form.reset();}else{if(formMessage){formMessage.style.display="block";formMessage.style.background="rgba(239, 68, 68, 0.16)";formMessage.style.border="1px solid #ef4444";formMessage.style.color="#fca5a5";formMessage.textContent="Error no se envió el formulario; Comunicate directamente con agenciawebvoxel@gmail.com";}}}catch(error){if(formMessage){formMessage.style.display="block";formMessage.style.background="rgba(239, 68, 68, 0.16)";formMessage.style.border="1px solid #ef4444";formMessage.style.color="#fca5a5";formMessage.textContent="Hubo un problema de conexión. Inténtalo de nuevo.";}}finally{submitBtn.textContent=originalText;submitBtn.disabled=false;setTimeout(()=>{if(formMessage)formMessage.style.display="none";},5000);}});}</script>
 </body>
 </html>
