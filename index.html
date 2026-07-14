@@ -203,7 +203,7 @@ Voxel
 </div>
 <div class=faq-item>
 <button class=faq-q>¿Trabajan con sitios web de e-commerce?<span class=plus></span></button>
-<div class=faq-a><p>Sí. Estos están disponibles con el sevicio 1 a 1. Consultá por ejemplos en funcionamiento y pongamos en marcha tuyo</p></div>
+<div class=faq-a><p>Sí. Estos están disponibles con el sevicio 1 a 1. Consultá por ejemplos en funcionamiento y pongamos en marcha el tuyo</p></div>
 </div>
 </div>
 </div>
@@ -216,7 +216,10 @@ Voxel
 <h2 style=margin-bottom:0>Contanos qué necesitás y te proponemos una estructura para tu web.</h2>
 <p style=margin-top:20px>Respondemos en poco tiempo con una propuesta concreta: qué plantilla o desarrollo a medida se adapta mejor a tu negocio.</p>
 </div>
-<form id=contact-form>
+<form action=https://api.web3forms.com/submit method=POST id=contact-form>
+<div>
+<input type=hidden name=access_key value=bef754de-e8a0-4e49-904f-11dc425d42b6>
+</div>
 <div class=field>
 <label for=nombre>Nombre</label>
 <input type=text id=nombre name=nombre required>
@@ -245,6 +248,6 @@ Voxel
 <script>(function(){const scenes=document.querySelectorAll('.scene');const dots=document.querySelectorAll('.cycle-dots button');let current=0;let timer;const DURATION=4200;function goTo(i){scenes[current].classList.remove('active');dots[current].classList.remove('active');current=i;scenes[current].classList.add('active');dots[current].classList.add('active');}
 function next(){goTo((current+1)%scenes.length);}
 function restart(){clearInterval(timer);timer=setInterval(next,DURATION);}
-dots.forEach(btn=>{btn.addEventListener('click',()=>{const i=parseInt(btn.dataset.i,10);if(i!==current){goTo(i);restart();}});});const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduce)restart();const hero=document.getElementById('hero');const glow=document.getElementById('glow');hero.addEventListener('mousemove',(e)=>{const rect=hero.getBoundingClientRect();const x=e.clientX-rect.left;glow.style.transform=`translate(${x-450}px,${-200+(e.clientY-rect.top)*0.15}px)`;});document.querySelectorAll('.faq-item').forEach(item=>{const q=item.querySelector('.faq-q');const a=item.querySelector('.faq-a');q.addEventListener('click',()=>{const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(other=>{if(other!==item){other.classList.remove('open');other.querySelector('.faq-a').style.maxHeight=null;}});if(isOpen){item.classList.remove('open');a.style.maxHeight=null;}else{item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}});});document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const btn=this.querySelector('.cta-btn');const original=btn.textContent;btn.textContent='Enviado ✓';btn.style.opacity='0.7';setTimeout(()=>{btn.textContent=original;btn.style.opacity='1';this.reset();},2200);});})();</script>
+dots.forEach(btn=>{btn.addEventListener('click',()=>{const i=parseInt(btn.dataset.i,10);if(i!==current){goTo(i);restart();}});});const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduce)restart();const hero=document.getElementById('hero');const glow=document.getElementById('glow');hero.addEventListener('mousemove',(e)=>{const rect=hero.getBoundingClientRect();const x=e.clientX-rect.left;glow.style.transform=`translate(${x-450}px,${-200+(e.clientY-rect.top)*0.15}px)`;});document.querySelectorAll('.faq-item').forEach(item=>{const q=item.querySelector('.faq-q');const a=item.querySelector('.faq-a');q.addEventListener('click',()=>{const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(other=>{if(other!==item){other.classList.remove('open');other.querySelector('.faq-a').style.maxHeight=null;}});if(isOpen){item.classList.remove('open');a.style.maxHeight=null;}else{item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}});});document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const form=this;const btn=form.querySelector('.cta-btn');const original=btn.textContent;btn.textContent='Enviando...';btn.disabled=true;fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)}).then(res=>res.json()).then(data=>{if(data.success){btn.textContent='Enviado ✓';form.reset();}else{btn.textContent='Error, reintentar';}}).catch(()=>{btn.textContent='Error, reintentar';}).finally(()=>{setTimeout(()=>{btn.textContent=original;btn.disabled=false;},2500);});});})();</script>
 </body>
 </html>
