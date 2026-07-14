@@ -1,392 +1,1444 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="es">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=description content="Lexora, estudio jurídico profesional con asesoramiento legal claro, estratégico y confidencial.">
-<title>Lexora | Estudio jurídico</title>
-<link rel=icon type=image/svg+xml href=../assets/logo-mark.svg>
-<style>:root{--navy:#0f2438;--navy-soft:#17324c;--navy-deep:#081421;--gray-dark:#26313f;--gray:#667085;--gray-light:#edf0f4;--white:#fff;--off-white:#f8f6f1;--beige:#e7dcc8;--gold:#bfa46f;--gold-soft:#efe6d2;--line:#dfe4ec;--shadow:0 20px 50px rgba(15,36,56,0.12);--radius:8px;--container:1160px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--navy-deep);font-family:"Segoe UI",Arial,sans-serif;background:var(--white);line-height:1.6;letter-spacing:0}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}.container{width:min(var(--container),calc(100% - 40px));margin:0 auto}.section{padding:100px 0}.section-muted{background:var(--off-white)}.section-dark{color:var(--white);background:var(--navy)}.section-header{max-width:760px;margin-bottom:44px}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--gold);font-size:.78rem;font-weight:800;text-transform:uppercase}.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1,h2,h3,.brand,.stat-value{font-family:Georgia,"Times New Roman",serif;letter-spacing:0}h1{max-width:760px;margin-bottom:22px;color:var(--white);font-size:5.35rem;line-height:.96}h2{margin-bottom:18px;color:var(--navy);font-size:3.28rem;line-height:1.08}.section-dark h2,.section-dark h3{color:var(--white)}h3{margin-bottom:10px;color:var(--navy);font-size:1.28rem;line-height:1.25}.lead{color:var(--gray-dark);font-size:1.1rem;line-height:1.78}.section-dark .lead{color:rgba(255,255,255,0.76)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:1px solid transparent;border-radius:var(--radius);font-weight:800;line-height:1;transition:transform 180ms ease,background 180ms ease,border-color 180ms ease,color 180ms ease}.btn:hover{transform:translateY(-2px)}.btn-primary{color:var(--navy-deep);background:var(--gold);border-color:var(--gold);box-shadow:0 16px 34px rgba(191,164,111,0.22)}.btn-primary:hover{background:var(--gold-soft);border-color:var(--gold-soft)}.btn-outline{color:var(--white);background:transparent;border-color:rgba(255,255,255,0.28)}.btn-outline:hover{color:var(--navy);background:var(--white)}.btn-dark{color:var(--white);background:var(--navy)}.site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,0.92);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}.brand{display:inline-flex;align-items:center;gap:12px;color:var(--navy);font-size:1.2rem;font-weight:900}.brand-mark{display:grid;place-items:center;width:38px;height:38px;color:var(--white);background:var(--navy);border-radius:var(--radius);font-family:"Segoe UI",Arial,sans-serif;font-size:.76rem;font-weight:900;outline:2px solid var(--gold);outline-offset:3px}.nav-links{display:flex;align-items:center;gap:26px;color:var(--gray-dark);font-size:.94rem;font-weight:700}.nav-links a:hover{color:var(--navy)}.nav-links .btn{min-height:44px;padding:0 18px;color:var(--white)}.hero{position:relative;overflow:hidden;color:var(--white);background:linear-gradient(90deg,rgba(8,20,33,0.98) 0,rgba(15,36,56,0.95) 48%,rgba(23,50,76,0.9) 100%),var(--navy)}.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.035) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}.hero-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,0.95fr) minmax(360px,0.85fr);align-items:center;gap:56px;min-height:calc(100vh - 76px);padding:68px 0}.hero-copy .lead{max-width:650px;margin-bottom:30px;color:rgba(255,255,255,0.78)}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:42px}.hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:700px}.proof-item{padding-top:18px;border-top:1px solid rgba(255,255,255,0.16)}.proof-item strong{display:block;color:var(--white);font-size:1.3rem;line-height:1.1}.proof-item span{color:rgba(255,255,255,0.66);font-size:.9rem}.hero-visual{position:relative;min-height:560px;background:var(--navy-deep);border:1px solid rgba(255,255,255,0.16);border-radius:var(--radius);box-shadow:0 28px 70px rgba(0,0,0,0.24);overflow:hidden}.hero-visual::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,20,33,0.5),rgba(8,20,33,0.08) 50%,rgba(8,20,33,0.38)),linear-gradient(180deg,rgba(8,20,33,0.04),rgba(8,20,33,0.58));pointer-events:none}.hero-visual img{width:100%;height:100%;min-height:560px;object-fit:cover;object-position:72% center;filter:saturate(0.9) contrast(1.05)}.consult-card{position:absolute;left:48px;right:48px;bottom:34px;z-index:2;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:20px;color:var(--navy);background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}.consult-card strong{display:block;margin-bottom:4px;font-family:Georgia,"Times New Roman",serif;font-size:1.2rem}.consult-card span{color:var(--gray);font-size:.9rem}.consult-badge{display:grid;place-items:center;width:58px;height:58px;color:var(--navy);background:var(--gold-soft);border-radius:50%;font-weight:900}.about-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:start}.about-card{padding:34px;color:var(--white);background:var(--navy);border-radius:var(--radius);box-shadow:var(--shadow)}.about-card h3{color:var(--white);font-size:1.7rem}.about-card p{color:rgba(255,255,255,0.74)}.about-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}.about-stats div{padding:18px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius)}.stat-value{display:block;color:var(--gold);font-size:1.7rem;line-height:1;font-weight:900}.about-stats span:not(.stat-value){color:rgba(255,255,255,0.68);font-size:.9rem}.about-copy p{color:var(--gray-dark);font-size:1.04rem}.signature-line{display:inline-flex;align-items:center;gap:12px;margin-top:20px;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;font-weight:900}.signature-line::before{content:"";width:42px;height:2px;background:var(--gold)}.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.practice-card,.benefit-card,.team-card,.testimonial-card,.faq-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.practice-card{position:relative;overflow:hidden;padding:28px;box-shadow:none;transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease}.practice-card::after{content:"";position:absolute;right:-38px;bottom:-38px;width:112px;height:112px;background:radial-gradient(circle,rgba(191,164,111,0.16),transparent 68%);pointer-events:none}.practice-card>*{position:relative;z-index:1}.practice-card:hover,.team-card:hover,.testimonial-card:hover{transform:translateY(-5px);border-color:rgba(191,164,111,0.42);box-shadow:0 24px 58px rgba(15,36,56,0.14)}.practice-number{display:grid;place-items:center;width:44px;height:44px;margin-bottom:24px;color:var(--navy);background:var(--gold-soft);border-radius:var(--radius);font-weight:900}.practice-card p{margin-bottom:0;color:var(--gray)}.benefits-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:start}.benefit-panel{padding:34px;color:var(--white);background:var(--navy);border-radius:var(--radius);box-shadow:var(--shadow)}.benefit-panel h2{color:var(--white)}.benefit-panel p{color:rgba(255,255,255,0.76)}.benefit-list{display:grid;gap:16px}.benefit-card{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:24px;box-shadow:none}.benefit-icon{display:grid;place-items:center;width:52px;height:52px;color:var(--white);background:var(--navy);border-radius:var(--radius);font-family:Georgia,"Times New Roman",serif;font-weight:900}.benefit-card:nth-child(2) .benefit-icon{background:var(--gray-dark)}.benefit-card:nth-child(3) .benefit-icon{background:var(--gold);color:var(--navy)}.benefit-card:nth-child(4) .benefit-icon{background:#435066}.benefit-card p{margin-bottom:0;color:var(--gray)}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.team-card{padding:28px;box-shadow:none;transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease}.team-avatar{display:grid;place-items:center;width:72px;height:72px;margin-bottom:22px;color:var(--white);background:var(--navy);border:3px solid var(--gold);border-radius:50%;font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;font-weight:900}.team-role{display:inline-flex;margin-bottom:12px;color:var(--gold);font-size:.82rem;font-weight:900;text-transform:uppercase}.team-card p{margin-bottom:0;color:var(--gray)}.track-layout{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.track-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.track-item{padding:26px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius)}.track-item .stat-value{margin-bottom:8px;color:var(--gold);font-size:2.15rem}.track-item span:not(.stat-value){color:rgba(255,255,255,0.74)}.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial-card{padding:28px;box-shadow:none;transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease}.quote-mark{display:block;margin-bottom:18px;color:var(--gold);font-family:Georgia,"Times New Roman",serif;font-size:2rem;line-height:1}.testimonial-card p{color:var(--gray-dark)}.testimonial-author{display:block;margin-top:20px;color:var(--navy);font-weight:900}.testimonial-role{display:block;color:var(--gray);font-size:.9rem}.faq-list{display:grid;gap:14px}.faq-item{padding:24px 26px;box-shadow:none}.faq-item p{margin-bottom:0;color:var(--gray)}.contact-cta{padding:110px 0;color:var(--white);background:linear-gradient(90deg,rgba(8,20,33,0.98),rgba(15,36,56,0.94)),var(--navy)}.cta-panel{display:grid;grid-template-columns:1fr .85fr;gap:34px;align-items:center;padding:42px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius);box-shadow:0 28px 70px rgba(0,0,0,0.18)}.cta-panel h2{color:var(--white)}.cta-panel p{color:rgba(255,255,255,0.76)}.contact-form{padding:28px;color:var(--navy);background:var(--white);border-radius:var(--radius)}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field{display:grid;gap:8px;margin-bottom:14px}.field.full{grid-column:1 / -1}label{color:var(--gray-dark);font-size:.86rem;font-weight:850}input,select,textarea{width:100%;padding:13px 14px;color:var(--navy-deep);background:var(--off-white);border:1px solid var(--line);border-radius:var(--radius);outline:0}textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(191,164,111,0.14)}.contact-form .btn{width:100%;margin-top:4px}.fine-print{margin-top:14px;color:var(--gray);font-size:.82rem}.site-footer{padding:52px 0;color:rgba(255,255,255,0.72);background:var(--navy-deep)}.footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:30px}.footer-grid h3,.footer-grid strong{color:var(--white)}.footer-grid p,.footer-grid a{color:rgba(255,255,255,0.68)}.footer-links{display:grid;gap:8px}.footer-bottom{display:flex;justify-content:space-between;gap:18px;margin-top:36px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.12);font-size:.9rem}@media(max-width:1040px){h1{font-size:4.25rem}h2{font-size:2.85rem}.hero-layout,.about-layout,.benefits-layout,.track-layout,.cta-panel{grid-template-columns:1fr}.hero-layout{min-height:auto}.practice-grid,.team-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.container{width:min(100% - 28px,var(--container))}.section{padding:76px 0}.site-header{position:static}.nav{min-height:auto;padding:18px 0}.nav-links{display:none}h1{font-size:3.18rem}h2{font-size:2.1rem}.lead{font-size:1rem}.hero-layout{padding:58px 0 76px}.hero-proof,.practice-grid,.team-grid,.testimonials-grid,.track-list,.footer-grid,.form-grid,.about-stats{grid-template-columns:1fr}.hero-visual{min-height:460px}.hero-visual img{min-height:460px}.consult-card{grid-template-columns:1fr;left:28px;right:28px}.benefit-card{grid-template-columns:1fr}.contact-cta{padding:76px 0}.cta-panel{padding:28px}.footer-bottom{flex-direction:column}}@media(max-width:440px){h1{font-size:2.55rem}.hero-actions{flex-direction:column;align-items:stretch}.btn{width:100%}.hero-visual{min-height:390px}.hero-visual img{min-height:390px}}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lexora, estudio jurídico profesional con asesoramiento legal claro, estratégico y confidencial.">
+  <title>Lexora | Estudio jurídico</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo-mark.svg">
+  <style>
+    :root {
+      --navy: #0f2438;
+      --navy-soft: #17324c;
+      --navy-deep: #081421;
+      --gray-dark: #26313f;
+      --gray: #667085;
+      --gray-light: #edf0f4;
+      --white: #ffffff;
+      --off-white: #f8f6f1;
+      --beige: #e7dcc8;
+      --gold: #bfa46f;
+      --gold-soft: #efe6d2;
+      --line: #dfe4ec;
+      --shadow: 0 20px 50px rgba(15, 36, 56, 0.12);
+      --radius: 8px;
+      --container: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--navy-deep);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--white);
+      line-height: 1.6;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-muted {
+      background: var(--off-white);
+    }
+
+    .section-dark {
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    .brand,
+    .stat-value {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      color: var(--white);
+      font-size: 5.35rem;
+      line-height: 0.96;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--navy);
+      font-size: 3.28rem;
+      line-height: 1.08;
+    }
+
+    .section-dark h2,
+    .section-dark h3 {
+      color: var(--white);
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 1.28rem;
+      line-height: 1.25;
+    }
+
+    .lead {
+      color: var(--gray-dark);
+      font-size: 1.1rem;
+      line-height: 1.78;
+    }
+
+    .section-dark .lead {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 800;
+      line-height: 1;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--navy-deep);
+      background: var(--gold);
+      border-color: var(--gold);
+      box-shadow: 0 16px 34px rgba(191, 164, 111, 0.22);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-soft);
+      border-color: var(--gold-soft);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .btn-outline:hover {
+      color: var(--navy);
+      background: var(--white);
+    }
+
+    .btn-dark {
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 0.76rem;
+      font-weight: 900;
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--gray-dark);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--navy);
+    }
+
+    .nav-links .btn {
+      min-height: 44px;
+      padding: 0 18px;
+      color: var(--white);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(8, 20, 33, 0.98) 0%, rgba(15, 36, 56, 0.95) 48%, rgba(23, 50, 76, 0.9) 100%),
+        var(--navy);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 56px 56px;
+      pointer-events: none;
+    }
+
+    .hero-layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr);
+      align-items: center;
+      gap: 56px;
+      min-height: calc(100vh - 76px);
+      padding: 68px 0;
+    }
+
+    .hero-copy .lead {
+      max-width: 650px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 42px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 700px;
+    }
+
+    .proof-item {
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .proof-item strong {
+      display: block;
+      color: var(--white);
+      font-size: 1.3rem;
+      line-height: 1.1;
+    }
+
+    .proof-item span {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 0.9rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      background: var(--navy-deep);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(90deg, rgba(8, 20, 33, 0.5), rgba(8, 20, 33, 0.08) 50%, rgba(8, 20, 33, 0.38)),
+        linear-gradient(180deg, rgba(8, 20, 33, 0.04), rgba(8, 20, 33, 0.58));
+      pointer-events: none;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+      object-position: 72% center;
+      filter: saturate(0.9) contrast(1.05);
+    }
+
+    .consult-card {
+      position: absolute;
+      left: 48px;
+      right: 48px;
+      bottom: 34px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 20px;
+      color: var(--navy);
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .consult-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+    }
+
+    .consult-card span {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .consult-badge {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      color: var(--navy);
+      background: var(--gold-soft);
+      border-radius: 50%;
+      font-weight: 900;
+    }
+
+    /* About */
+    .about-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .about-card {
+      padding: 34px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-card h3 {
+      color: var(--white);
+      font-size: 1.7rem;
+    }
+
+    .about-card p {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .about-stats div {
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+    }
+
+    .stat-value {
+      display: block;
+      color: var(--gold);
+      font-size: 1.7rem;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .about-stats span:not(.stat-value) {
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 0.9rem;
+    }
+
+    .about-copy p {
+      color: var(--gray-dark);
+      font-size: 1.04rem;
+    }
+
+    .signature-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.22rem;
+      font-weight: 900;
+    }
+
+    .signature-line::before {
+      content: "";
+      width: 42px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    /* Practice Areas */
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .practice-card,
+    .benefit-card,
+    .team-card,
+    .testimonial-card,
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .practice-card {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+      box-shadow: none;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .practice-card::after {
+      content: "";
+      position: absolute;
+      right: -38px;
+      bottom: -38px;
+      width: 112px;
+      height: 112px;
+      background: radial-gradient(circle, rgba(191, 164, 111, 0.16), transparent 68%);
+      pointer-events: none;
+    }
+
+    .practice-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .practice-card:hover,
+    .team-card:hover,
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(191, 164, 111, 0.42);
+      box-shadow: 0 24px 58px rgba(15, 36, 56, 0.14);
+    }
+
+    .practice-number {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 24px;
+      color: var(--navy);
+      background: var(--gold-soft);
+      border-radius: var(--radius);
+      font-weight: 900;
+    }
+
+    .practice-card p {
+      margin-bottom: 0;
+      color: var(--gray);
+    }
+
+    /* Benefits */
+    .benefits-layout {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .benefit-panel {
+      padding: 34px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-panel h2 {
+      color: var(--white);
+    }
+
+    .benefit-panel p {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .benefit-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .benefit-card {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 18px;
+      padding: 24px;
+      box-shadow: none;
+    }
+
+    .benefit-icon {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: var(--radius);
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 900;
+    }
+
+    .benefit-card:nth-child(2) .benefit-icon {
+      background: var(--gray-dark);
+    }
+
+    .benefit-card:nth-child(3) .benefit-icon {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .benefit-card:nth-child(4) .benefit-icon {
+      background: #435066;
+    }
+
+    .benefit-card p {
+      margin-bottom: 0;
+      color: var(--gray);
+    }
+
+    /* Team */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .team-card {
+      padding: 28px;
+      box-shadow: none;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .team-avatar {
+      display: grid;
+      place-items: center;
+      width: 72px;
+      height: 72px;
+      margin-bottom: 22px;
+      color: var(--white);
+      background: var(--navy);
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.05rem;
+      font-weight: 900;
+    }
+
+    .team-role {
+      display: inline-flex;
+      margin-bottom: 12px;
+      color: var(--gold);
+      font-size: 0.82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .team-card p {
+      margin-bottom: 0;
+      color: var(--gray);
+    }
+
+    /* Track Record */
+    .track-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .track-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .track-item {
+      padding: 26px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+    }
+
+    .track-item .stat-value {
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-size: 2.15rem;
+    }
+
+    .track-item span:not(.stat-value) {
+      color: rgba(255, 255, 255, 0.74);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .testimonial-card {
+      padding: 28px;
+      box-shadow: none;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .quote-mark {
+      display: block;
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .testimonial-card p {
+      color: var(--gray-dark);
+    }
+
+    .testimonial-author {
+      display: block;
+      margin-top: 20px;
+      color: var(--navy);
+      font-weight: 900;
+    }
+
+    .testimonial-role {
+      display: block;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      padding: 24px 26px;
+      box-shadow: none;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--gray);
+    }
+
+    /* CTA */
+    .contact-cta {
+      padding: 110px 0;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(8, 20, 33, 0.98), rgba(15, 36, 56, 0.94)),
+        var(--navy);
+    }
+
+    .cta-panel {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 34px;
+      align-items: center;
+      padding: 42px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+    }
+
+    .cta-panel h2 {
+      color: var(--white);
+    }
+
+    .cta-panel p {
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .contact-form {
+      padding: 28px;
+      color: var(--navy);
+      background: var(--white);
+      border-radius: var(--radius);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--gray-dark);
+      font-size: 0.86rem;
+      font-weight: 850;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      color: var(--navy-deep);
+      background: var(--off-white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      outline: none;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(191, 164, 111, 0.14);
+    }
+
+    .contact-form .btn {
+      width: 100%;
+      margin-top: 4px;
+    }
+
+    .fine-print {
+      margin-top: 14px;
+      color: var(--gray);
+      font-size: 0.82rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      padding: 52px 0;
+      color: rgba(255, 255, 255, 0.72);
+      background: var(--navy-deep);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .footer-grid h3,
+    .footer-grid strong {
+      color: var(--white);
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 1040px) {
+      h1 {
+        font-size: 4.25rem;
+      }
+
+      h2 {
+        font-size: 2.85rem;
+      }
+
+      .hero-layout,
+      .about-layout,
+      .benefits-layout,
+      .track-layout,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-layout {
+        min-height: auto;
+      }
+
+      .practice-grid,
+      .team-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 28px, var(--container));
+      }
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .site-header {
+        position: static;
+      }
+
+      .nav {
+        min-height: auto;
+        padding: 18px 0;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      h1 {
+        font-size: 3.18rem;
+      }
+
+      h2 {
+        font-size: 2.1rem;
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+
+      .hero-layout {
+        padding: 58px 0 76px;
+      }
+
+      .hero-proof,
+      .practice-grid,
+      .team-grid,
+      .testimonials-grid,
+      .track-list,
+      .footer-grid,
+      .form-grid,
+      .about-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 460px;
+      }
+
+      .hero-visual img {
+        min-height: 460px;
+      }
+
+      .consult-card {
+        grid-template-columns: 1fr;
+        left: 28px;
+        right: 28px;
+      }
+
+      .benefit-card {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-cta {
+        padding: 76px 0;
+      }
+
+      .cta-panel {
+        padding: 28px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 440px) {
+      h1 {
+        font-size: 2.55rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .hero-visual img {
+        min-height: 390px;
+      }
+    }
+  </style>
 </head>
 <body>
-<header class=site-header>
-<div class="container nav">
-<a class=brand href=#inicio aria-label="Ir al inicio de Lexora">
-<span class=brand-mark aria-hidden=true>LX</span>
-Lexora Estudio Jurídico
-</a>
-<nav class=nav-links aria-label="Navegación principal">
-<a href=#estudio>Estudio</a>
-<a href=#areas>Áreas</a>
-<a href=#equipo>Equipo</a>
-<a href=#faq>FAQ</a>
-<a class="btn btn-dark" href=#contacto>Solicitar consulta</a>
-</nav>
-</div>
-</header>
-<main id=inicio>
-<section class=hero aria-label="Presentación principal del estudio jurídico">
-<div class="container hero-layout">
-<div class=hero-copy>
-<span class=eyebrow>Asesoramiento legal estratégico</span>
-<h1>Defensa, criterio y claridad para decisiones importantes.</h1>
-<p class=lead>
-Acompañamos a personas, empresas y familias con una práctica jurídica seria,
-confidencial y enfocada en soluciones concretas.
-</p>
-<div class=hero-actions>
-<a class="btn btn-primary" href=#contacto>Solicitar consulta</a>
-<a class="btn btn-outline" href=#areas>Ver áreas de práctica</a>
-</div>
-<div class=hero-proof>
-<div class=proof-item>
-<strong>15+ años</strong>
-<span>de experiencia combinada</span>
-</div>
-<div class=proof-item>
-<strong>24 h</strong>
-<span>respuesta inicial hábil</span>
-</div>
-<div class=proof-item>
-<strong>100%</strong>
-<span>tratamiento confidencial</span>
-</div>
-</div>
-</div>
-<div class=hero-visual aria-label="Apoyo visual corporativo jurídico">
-<img src=../../assets/abogados-hero.png alt="Despacho jurídico profesional con escritorio, balanza y biblioteca">
-<div class=consult-card>
-<div>
-<strong>Consulta inicial</strong>
-<span>Evaluación ordenada del caso, riesgos y próximos pasos.</span>
-</div>
-<span class=consult-badge>LX</span>
-</div>
-</div>
-</div>
-</section>
-<section class=section id=estudio>
-<div class="container about-layout">
-<div class=about-card>
-<span class=eyebrow>Sobre el estudio</span>
-<h3>Un despacho orientado a la confianza, la estrategia y el trato personalizado.</h3>
-<p>
-Lexora trabaja con una premisa clara: cada cliente necesita entender su situación legal,
-conocer sus opciones y avanzar con respaldo profesional.
-</p>
-<div class=about-stats>
-<div>
-<span class=stat-value>320+</span>
-<span>consultas acompañadas</span>
-</div>
-<div>
-<span class=stat-value>6</span>
-<span>áreas de práctica</span>
-</div>
-</div>
-</div>
-<div class=about-copy>
-<h2>Rigor jurídico con comunicación clara.</h2>
-<p>
-Nuestro equipo combina experiencia técnica, análisis estratégico y una comunicación
-directa para que cada decisión sea informada. Atendemos asuntos personales, familiares,
-laborales y empresariales con discreción y compromiso.
-</p>
-<p>
-Priorizamos el orden documental, la prevención de riesgos y la búsqueda de soluciones
-sostenibles, sin perder de vista el contexto humano y comercial de cada caso.
-</p>
-<span class=signature-line>Confianza antes que improvisación</span>
-</div>
-</div>
-</section>
-<section class="section section-muted" id=areas>
-<div class=container>
-<div class=section-header>
-<span class=eyebrow>Áreas de práctica</span>
-<h2>Especialidades legales presentadas con orden y claridad.</h2>
-<p class=lead>
-Cada área está diseñada para que el visitante identifique rápido el servicio jurídico
-que necesita y pueda solicitar una orientación inicial.
-</p>
-</div>
-<div class=practice-grid>
-<article class=practice-card>
-<span class=practice-number>01</span>
-<h3>Derecho civil</h3>
-<p>Contratos, obligaciones, responsabilidad civil, reclamos patrimoniales y asesoramiento preventivo.</p>
-</article>
-<article class=practice-card>
-<span class=practice-number>02</span>
-<h3>Derecho laboral</h3>
-<p>Acuerdos, desvinculaciones, reclamos, prevención de contingencias y asesoramiento a empresas.</p>
-</article>
-<article class=practice-card>
-<span class=practice-number>03</span>
-<h3>Derecho mercantil</h3>
-<p>Contratos comerciales, sociedades, acuerdos entre socios y estructura legal para negocios.</p>
-</article>
-<article class=practice-card>
-<span class=practice-number>04</span>
-<h3>Derecho familiar</h3>
-<p>Procesos familiares, acuerdos, sucesiones y acompañamiento profesional en asuntos sensibles.</p>
-</article>
-<article class=practice-card>
-<span class=practice-number>05</span>
-<h3>Derecho inmobiliario</h3>
-<p>Compraventas, arrendamientos, garantías, análisis documental y operaciones patrimoniales.</p>
-</article>
-<article class=practice-card>
-<span class=practice-number>06</span>
-<h3>Asesoría corporativa</h3>
-<p>Soporte legal continuo para empresas, profesionales independientes y organizaciones en crecimiento.</p>
-</article>
-</div>
-</div>
-</section>
-<section class=section id=diferenciales>
-<div class="container benefits-layout">
-<div class=benefit-panel>
-<span class=eyebrow>Por qué elegirnos</span>
-<h2>Defensa sólida, trato cercano y estrategia jurídica.</h2>
-<p>
-Sabemos que un asunto legal puede tener impacto personal, patrimonial o empresarial.
-Por eso trabajamos con método, prudencia y comunicación transparente.
-</p>
-</div>
-<div class=benefit-list>
-<article class=benefit-card>
-<span class=benefit-icon>01</span>
-<div>
-<h3>Experiencia aplicada</h3>
-<p>Analizamos cada caso con criterio técnico y conocimiento práctico del contexto legal.</p>
-</div>
-</article>
-<article class=benefit-card>
-<span class=benefit-icon>02</span>
-<div>
-<h3>Enfoque estratégico</h3>
-<p>No actuamos por impulso: evaluamos escenarios, riesgos, costos y tiempos antes de avanzar.</p>
-</div>
-</article>
-<article class=benefit-card>
-<span class=benefit-icon>03</span>
-<div>
-<h3>Transparencia</h3>
-<p>Explicamos posibilidades reales, límites del caso y próximos pasos con claridad.</p>
-</div>
-</article>
-<article class=benefit-card>
-<span class=benefit-icon>04</span>
-<div>
-<h3>Atención personalizada</h3>
-<p>Cada consulta recibe seguimiento directo y una comunicación cuidada durante el proceso.</p>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section section-muted" id=equipo>
-<div class=container>
-<div class=section-header>
-<span class=eyebrow>Equipo legal</span>
-<h2>Profesionales con solvencia, discreción y mirada humana.</h2>
-</div>
-<div class=team-grid>
-<article class=team-card>
-<span class=team-avatar>AV</span>
-<span class=team-role>Socia directora</span>
-<h3>Agustina Vera</h3>
-<p>Especialista en derecho civil, contratos y asesoramiento estratégico para clientes particulares y empresas.</p>
-</article>
-<article class=team-card>
-<span class=team-avatar>RM</span>
-<span class=team-role>Socio litigante</span>
-<h3>Rafael Montes</h3>
-<p>Abogado enfocado en resolución de conflictos, derecho laboral y defensa de intereses patrimoniales.</p>
-</article>
-<article class=team-card>
-<span class=team-avatar>LC</span>
-<span class=team-role>Abogada senior</span>
-<h3>Lucía Castro</h3>
-<p>Acompaña asuntos familiares, sucesorios e inmobiliarios con comunicación clara y trato reservado.</p>
-</article>
-</div>
-</div>
-</section>
-<section class="section section-dark">
-<div class="container track-layout">
-<div>
-<span class=eyebrow>Trayectoria</span>
-<h2>Experiencia que aporta orden y confianza.</h2>
-<p class=lead>
-La trayectoria de un estudio jurídico no se mide solo en años, sino en la capacidad de
-acompañar decisiones complejas con prudencia, firmeza y claridad.
-</p>
-</div>
-<div class=track-list>
-<div class=track-item>
-<span class=stat-value>15+</span>
-<span>años de experiencia combinada</span>
-</div>
-<div class=track-item>
-<span class=stat-value>320+</span>
-<span>clientes y consultas asesoradas</span>
-</div>
-<div class=track-item>
-<span class=stat-value>6</span>
-<span>áreas jurídicas cubiertas</span>
-</div>
-<div class=track-item>
-<span class=stat-value>24 h</span>
-<span>respuesta inicial hábil</span>
-</div>
-</div>
-</div>
-</section>
-<section class=section>
-<div class=container>
-<div class=section-header>
-<span class=eyebrow>Testimonios</span>
-<h2>Confianza construida con criterio y seguimiento.</h2>
-</div>
-<div class=testimonials-grid>
-<article class=testimonial-card>
-<span class=quote-mark>“</span>
-<p>El equipo explicó cada alternativa con mucha claridad. Pudimos decidir sin sentirnos presionados.</p>
-<span class=testimonial-author>Mariana S.</span>
-<span class=testimonial-role>Cliente particular</span>
-</article>
-<article class=testimonial-card>
-<span class=quote-mark>“</span>
-<p>Nos ayudaron a ordenar contratos internos y a reducir riesgos en una etapa clave de crecimiento.</p>
-<span class=testimonial-author>Federico L.</span>
-<span class=testimonial-role>Socio fundador</span>
-</article>
-<article class=testimonial-card>
-<span class=quote-mark>“</span>
-<p>Valoramos la discreción y el seguimiento. Siempre supimos qué estaba pasando y cuál era el próximo paso.</p>
-<span class=testimonial-author>Carolina R.</span>
-<span class=testimonial-role>Operación inmobiliaria</span>
-</article>
-</div>
-</div>
-</section>
-<section class="section section-muted" id=faq>
-<div class=container>
-<div class=section-header>
-<span class=eyebrow>Preguntas frecuentes</span>
-<h2>Dudas habituales antes de solicitar asesoramiento legal.</h2>
-</div>
-<div class=faq-list>
-<article class=faq-item>
-<h3>¿La primera consulta crea una relación abogado-cliente?</h3>
-<p>No necesariamente. Primero revisamos el asunto, verificamos disponibilidad y posibles conflictos de interés.</p>
-</article>
-<article class=faq-item>
-<h3>¿Puedo consultar si no tengo toda la documentación?</h3>
-<p>Sí. Podemos orientar qué documentos son necesarios y cómo ordenar la información antes de avanzar.</p>
-</article>
-<article class=faq-item>
-<h3>¿Atienden consultas para empresas y particulares?</h3>
-<p>Sí. Trabajamos con personas, familias, profesionales independientes, comercios y empresas en crecimiento.</p>
-</article>
-<article class=faq-item>
-<h3>¿La consulta puede ser virtual?</h3>
-<p>Sí. Coordinamos reuniones presenciales o virtuales según la urgencia, el tipo de asunto y la ubicación del cliente.</p>
-</article>
-</div>
-</div>
-</section>
-<section class=contact-cta id=contacto>
-<div class=container>
-<div class=cta-panel>
-<div>
-<span class=eyebrow>Solicitar consulta</span>
-<h2>Cuéntenos su situación y definamos el primer paso.</h2>
-<p>
-Recibirá una respuesta inicial para coordinar una consulta, revisar el contexto y evaluar
-si el estudio puede acompañar su caso.
-</p>
-<a class="btn btn-primary" href="mailto:consultas@lexora.com?subject=Solicitud%20de%20consulta">Escribir al estudio</a>
-</div>
-<form class=contact-form action=# method=post>
-<div class=form-grid>
-<div class=field>
-<label for=name>Nombre</label>
-<input id=name name=Nombre type=text placeholder="Su nombre" required>
-</div>
-<div class=field>
-<label for=email>Email</label>
-<input id=email name=Email type=email placeholder=su@email.com required>
-</div>
-<div class=field>
-<label for=area>Área de consulta</label>
-<select id=area name=Area>
-<option>Derecho civil</option>
-<option>Derecho laboral</option>
-<option>Derecho mercantil</option>
-<option>Derecho familiar</option>
-<option>Derecho inmobiliario</option>
-<option>Asesoría corporativa</option>
-</select>
-</div>
-<div class=field>
-<label for=priority>Prioridad</label>
-<select id=priority name=Prioridad>
-<option>Consulta general</option>
-<option>Necesito respuesta esta semana</option>
-<option>Tengo un plazo próximo</option>
-</select>
-</div>
-<div class="field full">
-<label for=message>Mensaje</label>
-<textarea id=message name=Mensaje placeholder="Describa brevemente su situación. Evite incluir datos sensibles en este primer mensaje."></textarea>
-</div>
-</div>
-<button class="btn btn-dark" type=submit>Enviar solicitud</button>
-<p class=fine-print>El envío del formulario no constituye asesoramiento legal ni crea una relación abogado-cliente.</p>
-</form>
-</div>
-</div>
-</section>
-</main>
-<footer class=site-footer>
-<div class=container>
-<div class=footer-grid>
-<div>
-<a class=brand href=#inicio aria-label="Volver al inicio de Lexora">
-<span class=brand-mark aria-hidden=true>LX</span>
-Lexora
-</a>
-<p>Estudio jurídico con asesoramiento claro, estratégico y confidencial.</p>
-</div>
-<div>
-<h3>Dirección</h3>
-<p>Av. Libertad 1840, piso 7<br>Montevideo, Uruguay</p>
-</div>
-<div>
-<h3>Contacto</h3>
-<p>+598 2400 0000<br>consultas@lexora.com</p>
-</div>
-<div>
-<h3>Horario</h3>
-<p>Lunes a viernes<br>09:00 - 18:00</p>
-<div class=footer-links>
-<a href=#>LinkedIn</a>
-<a href=#>Aviso legal</a>
-<a href=index.html#plantillas target=_top>Volver a Voxel</a>
-</div>
-</div>
-</div>
-<div class=footer-bottom>
-<span>© 2026 Lexora Estudio Jurídico. Todos los derechos reservados.</span>
-<span style=display:inline-flex;align-items:center;gap:8px>
-Plantilla demo para Voxel.
-<img src=../assets/logo-mark.svg alt="Voxel Logo" style=width:18px;height:auto>
-</span>
-</div>
-</div>
-</footer>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Lexora">
+        <span class="brand-mark" aria-hidden="true">LX</span>
+        Lexora Estudio Jurídico
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#estudio">Estudio</a>
+        <a href="#areas">Áreas</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-dark" href="#contacto">Solicitar consulta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero principal -->
+    <section class="hero" aria-label="Presentación principal del estudio jurídico">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">Asesoramiento legal estratégico</span>
+          <h1>Defensa, criterio y claridad para decisiones importantes.</h1>
+          <p class="lead">
+            Acompañamos a personas, empresas y familias con una práctica jurídica seria,
+            confidencial y enfocada en soluciones concretas.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar consulta</a>
+            <a class="btn btn-outline" href="#areas">Ver áreas de práctica</a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-item">
+              <strong>15+ años</strong>
+              <span>de experiencia combinada</span>
+            </div>
+            <div class="proof-item">
+              <strong>24 h</strong>
+              <span>respuesta inicial hábil</span>
+            </div>
+            <div class="proof-item">
+              <strong>100%</strong>
+              <span>tratamiento confidencial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Apoyo visual corporativo jurídico">
+          <img src="../../assets/abogados-hero.png" alt="Despacho jurídico profesional con escritorio, balanza y biblioteca">
+          <div class="consult-card">
+            <div>
+              <strong>Consulta inicial</strong>
+              <span>Evaluación ordenada del caso, riesgos y próximos pasos.</span>
+            </div>
+            <span class="consult-badge">LX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre el estudio -->
+    <section class="section" id="estudio">
+      <div class="container about-layout">
+        <div class="about-card">
+          <span class="eyebrow">Sobre el estudio</span>
+          <h3>Un despacho orientado a la confianza, la estrategia y el trato personalizado.</h3>
+          <p>
+            Lexora trabaja con una premisa clara: cada cliente necesita entender su situación legal,
+            conocer sus opciones y avanzar con respaldo profesional.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <span class="stat-value">320+</span>
+              <span>consultas acompañadas</span>
+            </div>
+            <div>
+              <span class="stat-value">6</span>
+              <span>áreas de práctica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <h2>Rigor jurídico con comunicación clara.</h2>
+          <p>
+            Nuestro equipo combina experiencia técnica, análisis estratégico y una comunicación
+            directa para que cada decisión sea informada. Atendemos asuntos personales, familiares,
+            laborales y empresariales con discreción y compromiso.
+          </p>
+          <p>
+            Priorizamos el orden documental, la prevención de riesgos y la búsqueda de soluciones
+            sostenibles, sin perder de vista el contexto humano y comercial de cada caso.
+          </p>
+          <span class="signature-line">Confianza antes que improvisación</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Áreas de práctica -->
+    <section class="section section-muted" id="areas">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Áreas de práctica</span>
+          <h2>Especialidades legales presentadas con orden y claridad.</h2>
+          <p class="lead">
+            Cada área está diseñada para que el visitante identifique rápido el servicio jurídico
+            que necesita y pueda solicitar una orientación inicial.
+          </p>
+        </div>
+
+        <div class="practice-grid">
+          <article class="practice-card">
+            <span class="practice-number">01</span>
+            <h3>Derecho civil</h3>
+            <p>Contratos, obligaciones, responsabilidad civil, reclamos patrimoniales y asesoramiento preventivo.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="practice-number">02</span>
+            <h3>Derecho laboral</h3>
+            <p>Acuerdos, desvinculaciones, reclamos, prevención de contingencias y asesoramiento a empresas.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="practice-number">03</span>
+            <h3>Derecho mercantil</h3>
+            <p>Contratos comerciales, sociedades, acuerdos entre socios y estructura legal para negocios.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="practice-number">04</span>
+            <h3>Derecho familiar</h3>
+            <p>Procesos familiares, acuerdos, sucesiones y acompañamiento profesional en asuntos sensibles.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="practice-number">05</span>
+            <h3>Derecho inmobiliario</h3>
+            <p>Compraventas, arrendamientos, garantías, análisis documental y operaciones patrimoniales.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="practice-number">06</span>
+            <h3>Asesoría corporativa</h3>
+            <p>Soporte legal continuo para empresas, profesionales independientes y organizaciones en crecimiento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="section" id="diferenciales">
+      <div class="container benefits-layout">
+        <div class="benefit-panel">
+          <span class="eyebrow">Por qué elegirnos</span>
+          <h2>Defensa sólida, trato cercano y estrategia jurídica.</h2>
+          <p>
+            Sabemos que un asunto legal puede tener impacto personal, patrimonial o empresarial.
+            Por eso trabajamos con método, prudencia y comunicación transparente.
+          </p>
+        </div>
+
+        <div class="benefit-list">
+          <article class="benefit-card">
+            <span class="benefit-icon">01</span>
+            <div>
+              <h3>Experiencia aplicada</h3>
+              <p>Analizamos cada caso con criterio técnico y conocimiento práctico del contexto legal.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-icon">02</span>
+            <div>
+              <h3>Enfoque estratégico</h3>
+              <p>No actuamos por impulso: evaluamos escenarios, riesgos, costos y tiempos antes de avanzar.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-icon">03</span>
+            <div>
+              <h3>Transparencia</h3>
+              <p>Explicamos posibilidades reales, límites del caso y próximos pasos con claridad.</p>
+            </div>
+          </article>
+
+          <article class="benefit-card">
+            <span class="benefit-icon">04</span>
+            <div>
+              <h3>Atención personalizada</h3>
+              <p>Cada consulta recibe seguimiento directo y una comunicación cuidada durante el proceso.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo legal -->
+    <section class="section section-muted" id="equipo">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Equipo legal</span>
+          <h2>Profesionales con solvencia, discreción y mirada humana.</h2>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <span class="team-avatar">AV</span>
+            <span class="team-role">Socia directora</span>
+            <h3>Agustina Vera</h3>
+            <p>Especialista en derecho civil, contratos y asesoramiento estratégico para clientes particulares y empresas.</p>
+          </article>
+
+          <article class="team-card">
+            <span class="team-avatar">RM</span>
+            <span class="team-role">Socio litigante</span>
+            <h3>Rafael Montes</h3>
+            <p>Abogado enfocado en resolución de conflictos, derecho laboral y defensa de intereses patrimoniales.</p>
+          </article>
+
+          <article class="team-card">
+            <span class="team-avatar">LC</span>
+            <span class="team-role">Abogada senior</span>
+            <h3>Lucía Castro</h3>
+            <p>Acompaña asuntos familiares, sucesorios e inmobiliarios con comunicación clara y trato reservado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Casos y trayectoria -->
+    <section class="section section-dark">
+      <div class="container track-layout">
+        <div>
+          <span class="eyebrow">Trayectoria</span>
+          <h2>Experiencia que aporta orden y confianza.</h2>
+          <p class="lead">
+            La trayectoria de un estudio jurídico no se mide solo en años, sino en la capacidad de
+            acompañar decisiones complejas con prudencia, firmeza y claridad.
+          </p>
+        </div>
+
+        <div class="track-list">
+          <div class="track-item">
+            <span class="stat-value">15+</span>
+            <span>años de experiencia combinada</span>
+          </div>
+          <div class="track-item">
+            <span class="stat-value">320+</span>
+            <span>clientes y consultas asesoradas</span>
+          </div>
+          <div class="track-item">
+            <span class="stat-value">6</span>
+            <span>áreas jurídicas cubiertas</span>
+          </div>
+          <div class="track-item">
+            <span class="stat-value">24 h</span>
+            <span>respuesta inicial hábil</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Testimonios</span>
+          <h2>Confianza construida con criterio y seguimiento.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>El equipo explicó cada alternativa con mucha claridad. Pudimos decidir sin sentirnos presionados.</p>
+            <span class="testimonial-author">Mariana S.</span>
+            <span class="testimonial-role">Cliente particular</span>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>Nos ayudaron a ordenar contratos internos y a reducir riesgos en una etapa clave de crecimiento.</p>
+            <span class="testimonial-author">Federico L.</span>
+            <span class="testimonial-role">Socio fundador</span>
+          </article>
+
+          <article class="testimonial-card">
+            <span class="quote-mark">“</span>
+            <p>Valoramos la discreción y el seguimiento. Siempre supimos qué estaba pasando y cuál era el próximo paso.</p>
+            <span class="testimonial-author">Carolina R.</span>
+            <span class="testimonial-role">Operación inmobiliaria</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="section section-muted" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Dudas habituales antes de solicitar asesoramiento legal.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>¿La primera consulta crea una relación abogado-cliente?</h3>
+            <p>No necesariamente. Primero revisamos el asunto, verificamos disponibilidad y posibles conflictos de interés.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Puedo consultar si no tengo toda la documentación?</h3>
+            <p>Sí. Podemos orientar qué documentos son necesarios y cómo ordenar la información antes de avanzar.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿Atienden consultas para empresas y particulares?</h3>
+            <p>Sí. Trabajamos con personas, familias, profesionales independientes, comercios y empresas en crecimiento.</p>
+          </article>
+
+          <article class="faq-item">
+            <h3>¿La consulta puede ser virtual?</h3>
+            <p>Sí. Coordinamos reuniones presenciales o virtuales según la urgencia, el tipo de asunto y la ubicación del cliente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA de contacto -->
+    <section class="contact-cta" id="contacto">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <span class="eyebrow">Solicitar consulta</span>
+            <h2>Cuéntenos su situación y definamos el primer paso.</h2>
+            <p>
+              Recibirá una respuesta inicial para coordinar una consulta, revisar el contexto y evaluar
+              si el estudio puede acompañar su caso.
+            </p>
+            <a class="btn btn-primary" href="mailto:consultas@lexora.com?subject=Solicitud%20de%20consulta">Escribir al estudio</a>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="Nombre" type="text" placeholder="Su nombre" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="Email" type="email" placeholder="su@email.com" required>
+              </div>
+
+              <div class="field">
+                <label for="area">Área de consulta</label>
+                <select id="area" name="Area">
+                  <option>Derecho civil</option>
+                  <option>Derecho laboral</option>
+                  <option>Derecho mercantil</option>
+                  <option>Derecho familiar</option>
+                  <option>Derecho inmobiliario</option>
+                  <option>Asesoría corporativa</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="priority">Prioridad</label>
+                <select id="priority" name="Prioridad">
+                  <option>Consulta general</option>
+                  <option>Necesito respuesta esta semana</option>
+                  <option>Tengo un plazo próximo</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="Mensaje" placeholder="Describa brevemente su situación. Evite incluir datos sensibles en este primer mensaje."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-dark" type="submit">Enviar solicitud</button>
+            <p class="fine-print">El envío del formulario no constituye asesoramiento legal ni crea una relación abogado-cliente.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#inicio" aria-label="Volver al inicio de Lexora">
+            <span class="brand-mark" aria-hidden="true">LX</span>
+            Lexora
+          </a>
+          <p>Estudio jurídico con asesoramiento claro, estratégico y confidencial.</p>
+        </div>
+
+        <div>
+          <h3>Dirección</h3>
+          <p>Av. Libertad 1840, piso 7<br>Montevideo, Uruguay</p>
+        </div>
+
+        <div>
+          <h3>Contacto</h3>
+          <p>+598 2400 0000<br>consultas@lexora.com</p>
+        </div>
+
+        <div>
+          <h3>Horario</h3>
+          <p>Lunes a viernes<br>09:00 - 18:00</p>
+          <div class="footer-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">Aviso legal</a>
+            <a href="index.html#plantillas" target="_top">Volver a Voxel</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Lexora Estudio Jurídico. Todos los derechos reservados.</span>
+        <span style="display: inline-flex; align-items: center; gap: 8px;">
+          Plantilla demo para Voxel.
+          <img src="../assets/logo-mark.svg" alt="Voxel Logo" style="width: 18px; height: auto;">
+        </span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
